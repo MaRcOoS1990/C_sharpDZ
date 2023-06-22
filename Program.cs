@@ -1,14 +1,14 @@
 ﻿// Console.WriteLine("Введите число ");
 
 // int N = Convert.ToInt32(Console.ReadLine());
-// int number = 0;
+// int number = 2;
 // if (N < 0 )
 // {
 //     Console.Write("Введите положительное число ");
 // }
 // if (N % 2 == 1)
 // {
-//     N --;
+//     N -- ;
 // }
 // while (number <= N)
 // {
