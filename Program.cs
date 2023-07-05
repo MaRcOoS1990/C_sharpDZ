@@ -201,3 +201,72 @@
 //         Console.WriteLine("Интересное число " + array[i]);
 //     }
 // }
+
+
+// Семинар 3
+
+// Console.Write("Введите число: ");
+// string? stringNumber= Console.ReadLine();
+// int number;
+// bool isNumber = int.TryParse(stringNumber, out number);
+// if (isNumber)
+// {
+//     Console.WriteLine($"в строчке {stringNumber} находятся только цифры");
+// }
+// else
+// {
+//     Console.WriteLine($"в строчке {stringNumber} находятся символы");
+//     Console.WriteLine(number);
+// }
+
+
+// Console.Write("Введите координату по оси оХ: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите координату по оси оY: ");
+// int y = Convert.ToInt32(Console.ReadLine());
+
+// if (x > 0 && y > 0)
+// {
+//     Console.Write("Вы находитесь в 1 четверти");
+// }
+// else if (x < 0 && y > 0)
+// {
+//     Console.Write("Вы находитесь в 2 четверти");
+// }
+// else if (x < 0 && y < 0)
+// {
+//     Console.Write("Вы находитесь в 3 четверти");
+// }
+// else if (x > 0 && y < 0)
+// {
+//     Console.Write("Вы находитесь в 4 четверти");
+// }
+// else 
+// {
+//     Console.Write("Вы попали в одну из осей");
+// }
+
+
+// Console.Write("Введите координату по оси оХ для первой точки: ");
+// int x1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату по оси оY для первой точки: ");
+// int y1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату по оси оХ для второй точки: ");
+// int x2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите координату по оси оY для второй точки: ");
+// int y2 = Convert.ToInt32(Console.ReadLine());
+
+// double d = Math.Round(Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)),2);
+// Console.Write($"Расстояние: {d}");
+
+
+// Console.WriteLine("Введите число :");
+// int start;
+// int end = Convert.ToInt32(Console.ReadLine());
+// for (start = 1; start <= end; start++)
+// {
+//     Console.Write(Math.Pow(start, 2) + " ");
+// }
+
+
