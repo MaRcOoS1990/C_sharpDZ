@@ -357,4 +357,54 @@
 
 // Семинар 4
 
+// Console.WriteLine("Введите число");
+// int limit = Convert.ToInt32(Console.ReadLine());
+// int sum = 0;
+// for (int i = 0; i <= limit; i++)
+// {
+//     sum += i;
+// }
+// Console.WriteLine($"Сумма всех чисел от 1 до {limit} = {sum}");
+
+
+
+// Console.WriteLine("Введите число");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int cout = 0;
+// int numbercopy = number;
+// if (number != 0)
+// {
+//     while (number > 0)
+//     {
+//         cout++;
+//         number /= 10;
+//     }
+// }
+// else
+// {
+//     cout++;
+// }
+// Console.WriteLine($"В числе {numbercopy} - {cout} цифр(ы)");
+
+
+
+
+// Console.WriteLine("Введите число");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int result = 1;
+// for (int i = 1; i <= N; i++)
+// {
+//     result *= i;
+// }
+// Console.WriteLine($"Факториал от числа {N} = {result}");
+
+
+// int size = 8;
+// int[] array = new int[size];
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] = new Random().Next(2);
+// }
+// Console.WriteLine($"Массив: [ {string.Join("; ", array)} ]");
+
 
