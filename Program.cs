@@ -253,7 +253,7 @@
 
 
 
-Семинар 5
+// Семинар 5
 
 // int[] array = new int[12];
 // int sumPositive = 0;
