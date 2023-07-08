@@ -35,25 +35,25 @@
 // Console.WriteLine($"  Сумма нечетных элементов = {sum}");
 
 
-Console.WriteLine("Введите размер массива :");
-int size3 = Convert.ToInt32(Console.ReadLine());
-double[] array3 = new double[size3];
-Random rand = new Random();
-double min = array3[0];
-double max = array3[0];
-for (int i = 0; i < array3.Length; i++)
-{
-    array3[i] = rand.NextDouble();
-}
-for (int i = 0; i < array3.Length; i++)
-{
-    array3[i] = Math.Round(array3[i], 6);
-    array3[i] = array3[i] * 100;
-    Console.Write($" {string.Join("; ", array3[i])} ;");
-}
-for (int i = 0; i < array3.Length; i++)
-{
-    if (array3[i] > max) max = array3[i];
-    if (array3[i] < min) min = array3[i];    
-}
-Console.WriteLine($"  Разница между {max} и {min} = {max - min}");
+// Console.WriteLine("Введите размер массива :");
+// int size3 = Convert.ToInt32(Console.ReadLine());
+// double[] array3 = new double[size3];
+// Random rand = new Random();
+// for (int i = 0; i < array3.Length; i++)
+// {
+//     array3[i] = rand.NextDouble();
+// }
+// for (int i = 0; i < array3.Length; i++)
+// {
+//     array3[i] = Math.Round(array3[i], 6);
+//     array3[i] = array3[i] * 100;
+//     Console.Write($" {string.Join("; ", array3[i])} ;");
+// }
+// double min = array3[0];
+// double max = array3[0];
+// for (int i = 0; i < array3.Length; i++)
+// {
+//     if (array3[i] > max) max = array3[i];
+//     if (array3[i] < min) min = array3[i];    
+// }
+// Console.WriteLine($"  Разница между {max} и {min} = {max - min}");
