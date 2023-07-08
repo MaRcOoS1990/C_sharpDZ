@@ -96,21 +96,49 @@
 
 // 11
 // int[,] array = new int[5, 8];
- 
+
 // int rows = array.GetUpperBound(0) + 1;         // количество строк
 // int columns = array.GetUpperBound(1) + 1;     // количество столбцов
 // // int columns = array.Length / rows;        // количество столбцов
 // // или так
 
- 
-// for (int i = 0; i < rows; i++)
+
+// string[,] table = new string[2, 8];
+// for (int rows = 0; rows < 2; rows++)
 // {
-//     for (int j = 0; j < columns; j++)
+//     table[rows, 0] = "A";
+// }
+// for (int columns = 0; columns < 8; columns++)
+// {
+//     table[0, columns] = "A";
+//     table[rows, 0] = "A";
+// }
+// for (int rows = 0; rows < 2; rows++)
+// {
+//     for (int colums = 0; colums < 8; colums++)
 //     {
-//         Console.Write($"{array[i, j]} \t");
+//         Console.WriteLine($"-{table[rows, colums]}-");
+//     }
+// }
+
+// int[,] matrix = new int[2, 8];
+// for (int rows = 0; rows < 2; rows++)
+// {
+//     for (int columns = 0; columns < 8; columns++)
+//     {
+//         matrix[rows, columns] = 9;
+//     }
+// }
+
+// for (int rows = 0; rows < 2; rows++)
+// {
+//     for (int colums = 1; colums < 8; colums++)
+//     {
+//         Console.Write($"{matrix[rows, colums]} ");
 //     }
 //     Console.WriteLine();
 // }
+
 // НЕ ДОДЕЛАЛ
 
 // 12
