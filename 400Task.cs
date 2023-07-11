@@ -1,3 +1,4 @@
+using System;
 // Console.Write("Введите пятизначное число или строку из 5 символов: ");
 // string? polin = Console.ReadLine();
 // int number;
@@ -190,4 +191,37 @@
 // int apples = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine($"{apples / people} столько яблок будет у каждого школьника,{apples % people} остаток яблок");
 
-// *20
+// *20 
+// Console.WriteLine("Введите стоимость пирожка в рублях и копейках: ");
+// double cost = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Сколько пирожков вы хотите купить?");
+// double baker = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine($"Вы должны заплатить = {cost * baker % 100} рублей , копеек");
+
+// *21
+// Console.WriteLine("Введите число :");
+// double number = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine($"Число {number} в 6 степени = {Math.Pow(number, 6)}");
+
+// *22
+// Console.WriteLine("Введите сторону квадрата :");
+// double number = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine($"Периметр квадрата = {number * 4}");
+
+// *23
+// Console.WriteLine("Возведем число в степень.");
+// Console.WriteLine("Введите число :");
+// double number = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите степень :");
+// double numberDegree = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine($"Число {number} в {numberDegree} степени = {Math.Pow(number, numberDegree)}");
+
+// !24
+// Console.WriteLine("Введите число a :");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число b :");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число c :");
+// int c = Convert.ToInt32(Console.ReadLine());
+// int[] Array = new int[] { a, b, c };
+// Console.WriteLine($"{Array}");
