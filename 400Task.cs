@@ -33,15 +33,15 @@
 // }
 // Console.WriteLine(Cpolin);
 
-// 1
+// *1
 // Console.WriteLine("Chalov");
 // Console.WriteLine("Aleksei");
 // Console.WriteLine("Vyacheslavovich");
 
-// 2
+// *2
 // Console.Write("0\n00\n000\n0000\n00000");
 
-// 3
+// *3
 // Console.WriteLine("Введите 3 трехзначных числа:");
 // int num1 = Convert.ToInt32(Console.ReadLine());
 // if (num1 <= 99 || num1 >999)
@@ -63,7 +63,7 @@
 // }
 // Console.WriteLine($"{num1}  {num2}  {num3}");
 
-// 4
+// *4
 // Console.WriteLine("Введите 4 числа:");
 // int num1 = Convert.ToInt32(Console.ReadLine());
 // int num2 = Convert.ToInt32(Console.ReadLine());
@@ -71,19 +71,19 @@
 // int num4 = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine($"{num1} {num2} {num3} {num4}");
 
-// 5
+// *5
 // Console.Write("1 13 49");
 
-// 6
+// *6
 // Console.Write("7  15  100");
 
-// 7
+// *7
 // Console.Write("1710\n19");
 
-// 8
+// *8
 // Console.Write("18\n24\n30");
 
-// 9
+// *9
 // Console.WriteLine("Введите 4 числа:");
 // int num1 = Convert.ToInt32(Console.ReadLine());
 // int num2 = Convert.ToInt32(Console.ReadLine());
@@ -91,16 +91,16 @@
 // int num4 = Convert.ToInt32(Console.ReadLine());
 // Console.Write($"{num1}\n{num2}\n{num3}\n{num4}");
 
-// 10
+// *10
 // Console.WriteLine($"Пятница\nиюль\nАлексей");
 
-// 11
+// *11
 // int[,] array = new int[5, 8];
 
 // int rows = array.GetUpperBound(0) + 1;         // количество строк
 // int columns = array.GetUpperBound(1) + 1;     // количество столбцов
-// // int columns = array.Length / rows;        // количество столбцов
-// // или так
+// int columns = array.Length / rows;        // количество столбцов
+// или так
 
 
 // string[,] table = new string[2, 8];
@@ -141,11 +141,53 @@
 
 // НЕ ДОДЕЛАЛ
 
-// 12
+// *12
 
 
-// 13
+// *13
 // int digitOne = 1; int digitTwo = 5; int digitThree = 3;
 // Console.WriteLine(digitOne + digitTwo + digitThree);
 
-// 14
+// *14
+// Console.WriteLine("Введите ваше имя: ");
+// string? name = Console.ReadLine();
+// Console.WriteLine("Введите вашу фамилию: ");
+// string? familia = Console.ReadLine();
+// Console.WriteLine($"{name}\n{familia}");
+
+// *15
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Квадрат числа {number} = {number * number}");
+
+// *16
+// Console.WriteLine("Введите число: ");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"{number1} {number2}");
+
+// *17
+// Console.WriteLine("Введите число 1: ");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число 2: ");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число 3: ");
+// int number3 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Сумма чисел = {number1 + number2 + number3} ,а произведение = {number1 * number2 * number3}");
+
+// *18
+// Console.WriteLine("Введите число школьников: ");
+// int people = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите колличество яблок: ");
+// int apples = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"{apples / people} столько яблок будет у каждого школьника,{apples % people} остаток яблок");
+
+// *19
+// Console.WriteLine("Введите число школьников: ");
+// int people = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите колличество яблок: ");
+// int apples = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"{apples / people} столько яблок будет у каждого школьника,{apples % people} остаток яблок");
+
+// *20
