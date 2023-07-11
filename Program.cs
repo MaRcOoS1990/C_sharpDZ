@@ -506,3 +506,100 @@
 // Console.WriteLine($"{i}! = {Fibonacci(i)}");
 
 
+// Семинар 6
+
+// Console.Write("Введите строку: ");
+// string[] firstArray = Console.ReadLine().Split(" ");
+// Console.WriteLine(String.Join("; ", firstArray));
+
+
+// int[] GetArray(int size, int min, int max)
+// {
+//     int[] array = new int[size]; // Только нули
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// void PrintArray(int[] arr)
+// {
+// foreach (int item in arr)
+// {
+//     Console.Write(item + " ");
+// }
+//     Console.Write("[  ");
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         Console.Write(arr[i] + "  ");
+//     }
+//     Console.Write("]");
+// }
+
+// int[] result = GetArray(9, 0, 15);
+// PrintArray(result);
+// ReversArray(result);
+// Console.WriteLine("");
+// PrintArray(result);
+// PrintArray(CopyArray(result));
+
+// *1
+
+// int[] CopyArray(int[] array)
+// {
+//     int[] copyArray = new int[array.Length];
+//     int size = array.Length;
+//     for (int start = 0, end = size - 1; start < size; start++, end--)
+//     {
+//         copyArray[start] = array[end];
+//     }
+//     return copyArray;
+// }
+
+// *2
+// void ReversArray(int[] array)
+// {
+//     int size = array.Length;
+//     for (int i = 0, j = size - 1; i < size / 2; i++, j--)
+//     {
+//         int temp = array[i];
+//         array[i] = array[j];
+//         array[j] = temp;
+//     }
+// }
+
+
+// int a = 3;
+// int b = 4;
+// int c = 5;
+
+// bool IsTriangle(int a, int b, int c)
+// {
+//     return (((a + b) > c) && ((a + c) > b) && ((a + c) > c));
+// }
+// if (IsTriangle(a, b, c))
+// {
+//     Console.WriteLine("Треугольик существует");
+// }
+// else
+// {
+//     Console.WriteLine("Треугольник НЕ существует");
+// }
+
+// Console.WriteLine("Введите число : ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// if (N < 2)
+// {
+//     return;
+// }
+// int[] fibonacci = new int[N];
+
+// fibonacci[0] = 0;
+// fibonacci[1] = 1;
+// for (int i = 2; i < N; i++)
+// {
+//     fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+// }
+// Console.WriteLine($"Массив: {string.Join(", ", fibonacci)}");
+
