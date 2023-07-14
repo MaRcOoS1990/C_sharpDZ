@@ -127,7 +127,7 @@
 
 
 
-// Семинар 3
+// *Семинар 3
 
 // Console.Write("Введите число: ");
 // string? stringNumber= Console.ReadLine();
@@ -198,7 +198,7 @@
 
 
 
-// Семинар 4
+// *Семинар 4
 
 // Console.WriteLine("Введите число");
 // int limit = Convert.ToInt32(Console.ReadLine());
@@ -253,7 +253,7 @@
 
 
 
-// Семинар 5
+// *Семинар 5
 
 // int[] array = new int[12];
 // int sumPositive = 0;
@@ -369,7 +369,7 @@
 // Console.WriteLine($"Массив : [{string.Join("; ", MultiArr(array))}]");
 
 
-// Лекция про двумерные массивы и рекурсия
+// *Лекция про двумерные массивы и рекурсия
 
 // string[] table = new string [2, 3];
 // string.Empty
@@ -486,7 +486,7 @@
 // PrintImage(pic);
 
 
-// Рекурсия
+//* Рекурсия
 
 // double Factorial(int n)
 // {
@@ -506,7 +506,7 @@
 // Console.WriteLine($"{i}! = {Fibonacci(i)}");
 
 
-// Семинар 6
+// *Семинар 6
 
 // Console.Write("Введите строку: ");
 // string[] firstArray = Console.ReadLine().Split(" ");
@@ -602,4 +602,91 @@
 //     fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 // }
 // Console.WriteLine($"Массив: {string.Join(", ", fibonacci)}");
+
+
+
+//* Семинар 7
+
+
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// void ConvertToBinary(int number)
+// {
+//     if (number == 0)
+//     {
+//         return;
+//     }
+//     ConvertToBinary(number / 2);
+//     Console.Write($"{number % 2}");
+// }
+// ConvertToBinary(number);
+
+
+// Console.Write("Введите количество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// int[,] array2D = GetMatrix(rows, columns);
+// PrintMatrix(array2D);
+// int[,] GetMatrix(int m, int n)
+// {
+//     int[,] matrix = new int[m, n];
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i, j] = i + j;
+//         }
+//     }
+//     return matrix;
+// }
+
+
+// Console.Write("Введите количество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите minimum число: ");
+// int minRandom = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите maximum число: ");
+// int maxRandom = Convert.ToInt32(Console.ReadLine());
+// int[,] array2D = GetMatrix(rows, columns, minRandom, maxRandom);
+// Console.WriteLine("Матрица: ");
+// PrintMatrix(array2D);
+// int[,] GetMatrix(int m, int n, int min, int max)
+// {
+//     int[,] matrix = new int[m, n];
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i, j] = new Random().Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+// void PrintMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write(matrix[i, j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+// int[,] ChangeMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i += 2)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j += 2)
+//         {
+//             matrix[i, j] *= matrix[i, j];
+//         }
+//     }
+//     return matrix;
+// }
+// Console.WriteLine("Результат: ");
+// PrintMatrix(ChangeMatrix(array2D));
 

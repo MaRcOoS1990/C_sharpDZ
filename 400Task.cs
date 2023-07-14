@@ -216,12 +216,20 @@ using System;
 // double numberDegree = Convert.ToDouble(Console.ReadLine());
 // Console.WriteLine($"Число {number} в {numberDegree} степени = {Math.Pow(number, numberDegree)}");
 
-// !24
+// *24
 // Console.WriteLine("Введите число a :");
 // int a = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Введите число b :");
 // int b = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Введите число c :");
 // int c = Convert.ToInt32(Console.ReadLine());
-// int[] Array = new int[] { a, b, c };
-// Console.WriteLine($"{Array}");
+// Console.WriteLine($"{a} , {b} , {c} ");
+// int temp = 0;
+// int temp2 = 0;
+// temp = a; temp2 = c; a = b; b = temp2; c = temp;
+// Console.WriteLine($"{a} , {b} , {c} ");
+// temp = a; temp2 = b; b = c; c = temp; a = temp2;
+// Console.WriteLine($"{a} , {b} , {c} ");
+
+// *25
+// Console.WriteLine("Введите сторону куба: ");
