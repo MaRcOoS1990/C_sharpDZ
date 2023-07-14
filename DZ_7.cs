@@ -21,8 +21,9 @@
 //             matrix[i, j] = new Random().Next(min, max + 1);
 //             resultOfCount += matrix[i, j];
 //         }
-//         resultOfCount = Math.Round(resultOfCount, 3);
-//         Console.WriteLine($"Среднее арифметическое столбца {j} = {resultOfCount / matrix.GetLength(0)} ");
+//         resultOfCount = resultOfCount / matrix.GetLength(0);
+//         resultOfCount = Math.Round(resultOfCount, 4);
+//         Console.WriteLine($"Среднее арифметическое столбца {j} = {resultOfCount} ");
 //     }
 //     return matrix;
 // }
