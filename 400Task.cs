@@ -371,3 +371,19 @@ using System.Diagnostics;
 // Console.WriteLine($"{(num1 + num2) / 2}");
 
 // *40
+// Console.Write("Введите массу тела: ");
+// double m = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите объем тела: ");
+// double v = Convert.ToDouble(Console.ReadLine());
+// double plotnost = m / v;
+// Console.WriteLine($"Плотность тела = {plotnost}");
+
+// *41
+// Console.Write("Введите количество жителей: ");
+// double m = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите площадь государства: ");
+// double v = Convert.ToDouble(Console.ReadLine());
+// double plotnost = m / v;
+// Console.WriteLine($"Плотность населения = {plotnost}");
+
+// *42

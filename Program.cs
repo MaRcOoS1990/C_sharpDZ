@@ -690,3 +690,6 @@
 // Console.WriteLine("Результат: ");
 // PrintMatrix(ChangeMatrix(array2D));
 
+
+// *Семинар 8
+
