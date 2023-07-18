@@ -73,9 +73,9 @@
 //             matrix[i, j] = new Random().Next(min, max + 1);
 //             resultOfCount += matrix[i, j];
 //         }
-//         resultOfCount = resultOfCount / matrix.GetLength(0);
-//         resultOfCount = Math.Round(resultOfCount, 4);
-//         Console.WriteLine($"Среднее арифметическое столбца {j} = {resultOfCount} ");
+//         // resultOfCount = resultOfCount / matrix.GetLength(0);
+//         // resultOfCount = Math.Round(resultOfCount, 4);
+//         Console.WriteLine($"Среднее арифметическое столбца {j} = {Math.Round(resultOfCount / matrix.GetLength(0), 4)} ");
 //     }
 //     return matrix;
 // }

@@ -693,3 +693,132 @@
 
 // *Семинар 8
 
+
+// Console.Write("Введите количество строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите minimum число: ");
+// int minRandom = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите maximum число: ");
+// int maxRandom = Convert.ToInt32(Console.ReadLine());
+// int[,] array2D = GetMatrix(rows, columns, minRandom, maxRandom);
+
+// if (rows != columns)
+// {
+//     Console.WriteLine("Error");
+//     return;
+// }
+
+// Console.WriteLine("Матрица: ");
+
+// PrintMatrix(array2D);
+
+// int[,] GetMatrix(int m, int n, int min, int max)
+// {
+//     int[,] matrix = new int[m, n];
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i, j] = new Random().Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+
+// void PrintMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write(matrix[i, j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// void ChangeRows(int[,] matrix)
+// {
+//     int lastRowIndex = matrix.GetLength(0) - 1;
+//     for (int i = 0; i < matrix.GetLength(1); i++)
+//     {
+//         int temp = matrix[0, i];
+//         matrix[0, i] = matrix[lastRowIndex, i];
+//         matrix[lastRowIndex, i] = temp;
+//     }
+// }
+// ChangeRows(array2D);
+// Console.WriteLine("");
+// PrintMatrix(array2D);
+
+
+// int[,] ChangeMatrix(int[,] matrix)
+// {
+//     int[,] result = new int[matrix.GetLength(0), matrix.GetLength(1)];
+
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             result[j, i] = matrix[i, j];
+
+//         }
+//     }
+//     return result;
+// }
+
+// ChangeMatrix(array2D);
+// Console.WriteLine("");
+// PrintMatrix(ChangeMatrix(array2D));
+
+
+// int rows = 7;
+
+// int columns = 7;
+
+// int[,] matrix = new int[rows, columns]; // 3 строчки на 3 столбца 
+
+// int min = int.MaxValue;
+// int indexMinRow = 0; // Номер строчки с мин элементом
+// int indexMinColumn = 0;// Номер столбца с мин элементом
+
+// for (int i = 0; i < matrix.GetLength(0); i++)
+// {
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//         matrix[i, j] = new Random().Next(99);
+//         Console.Write(matrix[i, j] + "\t"); // 1    2   3 
+//         if (matrix[i, j] < min)
+//         {
+//             min = matrix[i, j];
+//             indexMinRow = i;
+//             indexMinColumn = j;
+//         }
+//     }
+//     Console.WriteLine();
+// }
+// Console.WriteLine($"min: {min}");
+// Console.WriteLine($"Стр с мин. элементом: {indexMinRow}");
+// Console.WriteLine($"Стл с мин. элементом: {indexMinColumn}");
+
+// Console.WriteLine();
+
+// for (int i = 0; i < matrix.GetLength(0); i++)
+// {
+//     if (i != indexMinRow)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             if (j != indexMinColumn)
+//             {
+//                 Console.Write(matrix[i, j] + "\t");
+//             }
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+
