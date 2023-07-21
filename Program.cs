@@ -745,9 +745,9 @@
 //     int lastRowIndex = matrix.GetLength(0) - 1;
 //     for (int i = 0; i < matrix.GetLength(1); i++)
 //     {
-//         int temp = matrix[0, i];
-//         matrix[0, i] = matrix[lastRowIndex, i];
-//         matrix[lastRowIndex, i] = temp;
+// int temp = matrix[0, i];
+// matrix[0, i] = matrix[lastRowIndex, i];
+// matrix[lastRowIndex, i] = temp;
 //     }
 // }
 // ChangeRows(array2D);
