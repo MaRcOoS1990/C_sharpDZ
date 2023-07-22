@@ -822,3 +822,57 @@
 // }
 
 
+// *Лекция 7
+
+// int PowerRec(int a, int n)
+// { return n == 0 ? 0 : PowerRec(a, n - 1) * a; }
+
+
+
+// *Семинар 9
+
+// Рекурсия - вызов функции внутри функции
+// 3! = 1 * 2 * 3 = 6 (N! - "Факториал от числа N")
+// Факториал - произв-е чисел от 1 до N включительно
+// int Factorial(int n)
+// {
+// Базовый случай - случай, когда нужно выйти из рекурсии
+// if (n == 1) return 1; // Попадание в return = завершение функции
+// return n * Factorial(n - 1);
+// }
+// Console.WriteLine(Factorial(6));
+
+
+// Console.Write("Ввудите число N :");
+// int n = Convert.ToInt32(Console.ReadLine());
+// string PrintNumbers(int start, int end)
+// {
+//     if (start == end) return end.ToString();
+//     return start + "," + PrintNumbers(start + 1, end);
+// }
+// Console.WriteLine($"Числа от 1 до {n} : {PrintNumbers(1, n)}.");
+
+
+// Console.Write("Ввудите число N :");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int SumNumber(int num)
+// {
+//     if (num == 0) return 0;
+//     return num % 10 + SumNumber(num / 10);
+// }
+// Console.WriteLine($"Сумма цифр в числе {number} = {SumNumber(number)}");
+
+
+// Console.Write("Ввудите число A :");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Ввудите число B :");
+// int b = Convert.ToInt32(Console.ReadLine());
+
+// int Pow(int a, int b)
+// {
+//     if (b == 0) return 1;
+//     if (b == 1) return a;
+//     return a * Pow(a, b - 1);
+// }
+
+// Console.WriteLine($"Число {a} в степени {b} = {Pow(a, b)}");
